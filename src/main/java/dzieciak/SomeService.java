@@ -10,7 +10,7 @@ public class SomeService {
     private static final Logger LOG = LoggerFactory.getLogger(SomeService.class);
 
     public void doSomething() {
-        LOG.info("Something was done");
+        LOG.info("Something was done in thread: {}", Thread.currentThread().getName());
     }
 
 }
